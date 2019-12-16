@@ -13,17 +13,14 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
-public class EmployeeApi {
+public class EmployeeJdbcApi {
 
-	private static Logger logger = Logger.getLogger(EmployeeApi.class);
+	private static Logger logger = Logger.getLogger(EmployeeJdbcApi.class);
 	private Connection con;
 
 	// Lets hope this works !!
-	public static void main(String args[]) {
 
-	}
-
-	public EmployeeApi() throws Exception {
+	public EmployeeJdbcApi() throws Exception {
 		Properties props = new Properties();
 		InputStream inStream = new FileInputStream("employee.properties");
 		props.load(inStream);
